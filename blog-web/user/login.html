@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI博客 - 用户登录</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <div id="common-header"></div>
+  <main>
+    <section class="section">
+      <div class="container login-grid">
+        <div class="login-info card">
+          <div class="hero-visual">
+            <img src="../assets/images/login-illustration.jpg" alt="登录视觉图" data-image-role="login-hero" />
+          </div>
+          <div class="login-intro">
+            <span class="overline">欢迎回来</span>
+            <h2>登录 AI博客，开启你的创作中心</h2>
+            <p>登录后可快速访问个人中心、管理文章、查看创作统计，让你的写作更高效。</p>
+          </div>
+        </div>
+        <div class="form-card card">
+          <h2>用户登录</h2>
+          <form id="login-form">
+            <div class="input-group">
+              <label for="login-account">邮箱 / 用户名</label>
+              <input id="login-account" type="text" required data-label="请输入账号" placeholder="请输入邮箱或用户名" />
+            </div>
+            <div class="input-group">
+              <label for="login-password">密码</label>
+              <div style="display:flex; gap:10px; align-items:center;">
+                <input id="login-password" type="password" required data-label="请输入密码" placeholder="请输入密码" style="flex:1;" />
+                <button type="button" id="toggle-login-password" class="btn" style="padding: 10px 14px;">显示</button>
+              </div>
+            </div>
+            <div class="input-group">
+              <label><input type="checkbox" /> 记住我</label>
+            </div>
+            <div class="button-row">
+              <button type="submit" class="btn btn-primary">登录</button>
+              <a href="register.html" class="btn">没有账号？注册</a>
+            </div>
+          </form>
+          <div style="margin-top:20px; color: var(--muted);">
+            <p>使用第三方账号登录</p>
+            <div class="button-row">
+              <button class="btn">微信登录</button>
+              <button class="btn">QQ登录</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div id="common-footer"></div>
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/common.js" data-common-path="../common/header-footer.html" data-active-page="login" data-base-path="../"></script>
+</body>
+</html>

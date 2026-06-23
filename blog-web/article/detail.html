@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI博客 - 文章详情</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <div id="common-header"></div>
+  <main>
+    <section class="section">
+      <div class="container">
+        <nav class="breadcrumb">
+          <a href="../index.html">首页</a> &gt;
+          <a href="../index.html">技术文章</a> &gt;
+          <span>写作工具如何提升内容质量</span>
+        </nav>
+        <div class="article-content section-split">
+          <article class="article-main">
+            <div class="card">
+              <h1>这些写作工具，帮你快速写出靠谱内容</h1>
+              <p class="article-meta">2026-06-21 · 作者：小智 · 阅读 1.2k · 标签：写作, 工具, 内容创作</p>
+              <div class="hero-visual">
+                <img src="../assets/images/detail-hero.jpg" alt="文章详情视觉图" data-image-role="article-detail-hero" />
+              </div>
+              <p>现在写东西不一定要全靠自己打草稿。本文讲讲哪些工具真能帮你快一点、写得顺手一点，别花时间瞎试。</p>
+              <h2>第一步：选对工具别乱用</h2>
+              <p>每个工具都有自己的擅长点。写标题、列提纲、修段落、润色语气，别一个工具当万能。</p>
+              <h2>第二步：把流程搭起来</h2>
+              <p>先想好主题，再让工具帮你列提纲、补充段落，最后自己再改一遍。这只是助攻，内容还是你说了算。</p>
+              <h2>第三步：发出去后别放着不管</h2>
+              <p>文章发出去后，看看哪些读者喜欢，继续修一修，这样写得越来越顺。</p>
+              <div class="button-row">
+                <button onclick="showToast('已点赞')" class="btn btn-primary">点赞</button>
+                <button onclick="showToast('已收藏')" class="btn">收藏</button>
+                <button onclick="showToast('已分享')" class="btn">分享</button>
+              </div>
+            </div>
+            <div class="card">
+              <h3>评论区</h3>
+              <div class="comment-card">
+                <p><strong>小明：</strong>这个写作流程很实用，已经收藏。</p>
+              </div>
+              <div class="comment-card">
+                <p><strong>小红：</strong>期待后续更多工具推荐。</p>
+              </div>
+              <form id="comment-form" class="form-card">
+                <div class="input-group">
+                  <label for="comment-content">发表评论</label>
+                  <textarea id="comment-content" rows="5" placeholder="输入您的评论" required data-label="请输入评论内容"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">提交评论</button>
+              </form>
+            </div>
+          </article>
+          <aside class="sidebar">
+            <div class="sidebar-card">
+              <h3>作者简介</h3>
+              <p>小智，喜欢把写作、开发经验写成简单实用的文章，也常测各种好用工具。</p>
+            </div>
+            <div class="sidebar-card">
+              <h3>相关文章</h3>
+              <div class="sidebar-list">
+                <a href="detail.html">快速搭建响应式博客页面</a>
+                <a href="detail.html">云计算部署最佳实践</a>
+              </div>
+            </div>
+            <div class="sidebar-card">
+              <h3>热门标签</h3>
+              <div class="tag-list">
+                <span class="tag">写作</span>
+                <span class="tag">内容</span>
+                <span class="tag">工具</span>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div id="common-footer"></div>
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/common.js" data-common-path="../common/header-footer.html" data-active-page="article" data-base-path="../"></script>
+</body>
+</html>

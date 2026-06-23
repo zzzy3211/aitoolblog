@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI博客 - 首页</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div id="common-header"></div>
+  <main>
+    <section class="hero section">
+      <div class="container hero-panel">
+        <div class="hero-copy">
+          <span class="overline">探索技术与开发</span>
+          <h1 class="page-title">用技术把博客写得顺手，分享实际可用的干货</h1>
+          <p>这里有写博客、做项目、用技术的真实经验，帮助你少踩坑、快出结果。</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="user/register.html">立即注册</a>
+            <a class="btn" href="article/detail.html">阅读最新文章</a>
+          </div>
+        </div>
+        <div class="hero-carousel">
+          <div class="carousel homepage-carousel" data-autoplay="true" data-interval="3000">
+            <div class="carousel-track">
+              <article class="carousel-slide carousel-slide-1">
+                <span class="overline">写作助攻</span>
+                <h2>写文章别再从0开始，让工具先帮你起个头</h2>
+                <p>从标题、提纲到润色，教你怎么让这些工具省点力气。</p>
+                <a class="btn btn-primary" href="article/detail.html">看看怎么用</a>
+              </article>
+              <article class="carousel-slide carousel-slide-2">
+                <span class="overline">前端实践</span>
+                <h2>页面搭得顺手，看着也舒服</h2>
+                <p>一步步教你做出简洁耐看的博客页，别再乱套了。</p>
+                <a class="btn btn-primary" href="article/detail.html">去学一波</a>
+              </article>
+              <article class="carousel-slide carousel-slide-3">
+                <span class="overline">云部署</span>
+                <h2>上线不慌，博客跑得更稳</h2>
+                <p>把上线流程讲清楚，服务器、域名、发布都能顺利搞定。</p>
+                <a class="btn btn-primary" href="article/detail.html">马上部署</a>
+              </article>
+            </div>
+            <div class="carousel-controls">
+              <button class="carousel-btn prev" type="button">‹</button>
+              <button class="carousel-btn next" type="button">›</button>
+            </div>
+            <div class="carousel-dots"></div>
+          </div>
+        </div>
+      </div>
+      <div class="container feature-strip">
+        <div class="feature-card feature-blue">
+          <h3>精选专题</h3>
+          <p>每周更新技术专题与实战案例，助你快速上手。</p>
+        </div>
+        <div class="feature-card feature-purple">
+          <h3>工具推荐</h3>
+          <p>从写作工具到前端插件，推荐那些真能用的好东西。</p>
+        </div>
+        <div class="feature-card feature-green">
+          <h3>学习路线</h3>
+          <p>根据不同方向推荐清晰的学习路径与落地项目。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container section-split">
+        <div>
+          <div class="card">
+            <div class="overline">最新文章</div>
+            <div class="article-list">
+              <article class="article-card">
+                <h3><a href="article/writing-tools.html">这几个写作工具，帮你快速写出靠谱内容</a></h3>
+                <p class="article-meta">2026-06-21 · 阅读 1.2k · 作者: 小智</p>
+                <p>聊聊现在那些能让你写东西快一点、顺手一点的小工具。</p>
+              </article>
+              <article class="article-card">
+                <h3><a href="article/responsive-blog.html">快速搭建响应式博客页面</a></h3>
+                <p class="article-meta">2026-06-18 · 阅读 980 · 作者: 前端君</p>
+                <p>用最简单的HTML/CSS/JS，做个干净实用的博客页面。</p>
+              </article>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="overline">分类推荐</div>
+            <div class="grid" style="grid-template-columns: repeat(3, minmax(0, 1fr));">
+              <a class="card" href="#">实用写作</a>
+              <a class="card" href="#">前端开发</a>
+              <a class="card" href="#">产品与设计</a>
+            </div>
+          </div>
+        </div>
+
+        <aside class="sidebar">
+          <div class="sidebar-card">
+            <h3>站内搜索</h3>
+            <div class="input-group">
+              <label for="search-input">搜索文章</label>
+              <input id="search-input" type="search" placeholder="输入关键词" />
+            </div>
+          </div>
+          <div class="sidebar-card">
+            <h3>热门文章</h3>
+            <div class="sidebar-list">
+              <a href="article/quick-writing.html">写东西这几招真好用</a>
+              <a href="article/responsive-blog.html">从零开始的博客部署指南</a>
+            </div>
+          </div>
+          <div class="sidebar-card">
+            <h3>标签推荐</h3>
+            <div class="tag-list">
+              <span class="tag">教程</span>
+              <span class="tag">工具</span>
+              <span class="tag">实战</span>
+              <span class="tag">分享</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+  <div id="common-footer"></div>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/common.js" data-common-path="common/header-footer.html" data-active-page="home" data-base-path="./"></script>
+</body>
+</html>

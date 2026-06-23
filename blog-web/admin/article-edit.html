@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI博客 - 文章编辑</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <div id="common-header"></div>
+  <main>
+    <section class="section">
+      <div class="container section-split">
+        <div class="card editor-card">
+          <h2>文章编辑</h2>
+          <form id="article-form">
+            <div class="input-group">
+              <label for="article-title">文章标题</label>
+              <input id="article-title" type="text" required data-label="请输入文章标题" placeholder="输入文章标题" />
+            </div>
+            <div class="input-group">
+              <label for="article-summary">文章摘要</label>
+              <textarea id="article-summary" rows="4" required data-label="请输入文章摘要" placeholder="输入文章摘要"></textarea>
+            </div>
+            <div class="input-group">
+              <label for="article-cover">封面图片 URL</label>
+              <input id="article-cover" type="text" placeholder="输入封面图片地址" />
+            </div>
+            <div class="input-group">
+              <label for="article-content">文章内容</label>
+              <textarea id="article-content" rows="12" required data-label="请输入文章内容" placeholder="在此处输入文章内容"></textarea>
+            </div>
+            <div class="input-group">
+              <label for="article-category">分类</label>
+              <select id="article-category">
+                <option>AI</option>
+                <option>前端</option>
+                <option>云计算</option>
+              </select>
+            </div>
+            <div class="input-group">
+              <label for="article-tags">标签</label>
+              <input id="article-tags" type="text" placeholder="输入标签，逗号分隔" />
+            </div>
+            <div class="button-row">
+              <button type="submit" class="btn btn-primary">保存草稿</button>
+              <button type="button" class="btn" onclick="showToast('预览功能暂未开启')">预览</button>
+            </div>
+          </form>
+        </div>
+        <aside class="sidebar">
+          <div class="sidebar-card">
+            <h3>发布设置</h3>
+            <div class="input-group">
+              <label for="publish-status">发布状态</label>
+              <select id="publish-status">
+                <option>已发布</option>
+                <option selected>草稿</option>
+              </select>
+            </div>
+            <div class="input-group">
+              <label for="featured-article">置顶文章</label>
+              <select id="featured-article">
+                <option>否</option>
+                <option>是</option>
+              </select>
+            </div>
+          </div>
+          <div class="sidebar-card">
+            <h3>历史记录</h3>
+            <div class="sidebar-list">
+              <a href="#">写作工具</a>
+              <a href="#">响应式博客页面</a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+  <div id="common-footer"></div>
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/common.js" data-common-path="../common/header-footer.html" data-active-page="admin" data-base-path="../"></script>
+</body>
+</html>

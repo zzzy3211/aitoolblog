@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI博客 - 响应式博客页面</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <div id="common-header"></div>
+  <main>
+    <section class="section">
+      <div class="container">
+        <nav class="breadcrumb">
+          <a href="../index.html">首页</a> &gt;
+          <a href="../index.html">技术文章</a> &gt;
+          <span>快速搭建响应式博客页面</span>
+        </nav>
+        <div class="article-content section-split">
+          <article class="article-main">
+            <div class="card">
+              <h1>快速搭建响应式博客页面</h1>
+              <p class="article-meta">2026-06-18 · 作者：前端君 · 阅读 980 · 标签：前端, 响应式, 页面</p>
+              <div class="hero-visual">
+                <img src="../assets/images/hero-banner.svg" alt="响应式博客页面视觉图" data-image-role="article-detail-hero" />
+              </div>
+              <p>一个页面好看不难，关键是结构清晰、布局稳健。本文演示用最基础的 HTML/CSS/JS 构建一个可用的博客页面。</p>
+              <h2>块状内容先行</h2>
+              <p>先把头部、文章区、侧边栏、底部搭起来，再考虑颜色和间距，让整个页面更容易维护。</p>
+              <h2>响应式不只是缩放</h2>
+              <p>用百分比布局和媒体查询，让内容在小屏上也能顺着排，不要把所有东西塞一起。</p>
+              <h2>保持样式简单</h2>
+              <p>适当的留白、统一的按钮、清晰的标题层级，就能让页面看起来专业而不花哨。</p>
+              <div class="button-row">
+                <button onclick="showToast('已点赞')" class="btn btn-primary">点赞</button>
+                <button onclick="showToast('已收藏')" class="btn">收藏</button>
+                <button onclick="showToast('已分享')" class="btn">分享</button>
+              </div>
+            </div>
+            <div class="card">
+              <h3>作者简介</h3>
+              <p>前端君，喜欢把复杂布局拆成简单模块，写文章时也总给读者留最少可复制的示例。</p>
+            </div>
+          </article>
+          <aside class="sidebar">
+            <div class="sidebar-card">
+              <h3>相关文章</h3>
+              <div class="sidebar-list">
+                <a href="writing-tools.html">写作工具如何提升输出效率</a>
+                <a href="quick-writing.html">写东西这几招真好用</a>
+              </div>
+            </div>
+            <div class="sidebar-card">
+              <h3>热门标签</h3>
+              <div class="tag-list">
+                <span class="tag">前端</span>
+                <span class="tag">布局</span>
+                <span class="tag">响应式</span>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div id="common-footer"></div>
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/common.js" data-common-path="../common/header-footer.html" data-active-page="article" data-base-path="../"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI博客 - 个人中心</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <div id="common-header"></div>
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="profile-hero">
+          <div>
+            <span class="overline">会员中心</span>
+            <h1>欢迎回来，<span id="profile-username">小助手</span></h1>
+            <p>这里是你的个人工作台，快速查看创作数据、管理文章和最近活动。</p>
+            <div class="button-row hero-actions">
+              <a class="btn btn-secondary" href="../index.html">返回首页</a>
+              <a class="btn btn-primary" href="../article/detail.html">浏览文章</a>
+            </div>
+          </div>
+          <div class="profile-badges">
+            <div class="stats-item"><span>文章</span><strong>12</strong></div>
+            <div class="stats-item"><span>阅读</span><strong>8.3k</strong></div>
+            <div class="stats-item"><span>收藏</span><strong>234</strong></div>
+          </div>
+        </div>
+        <div class="profile-grid">
+          <div>
+            <div class="profile-card card">
+              <h2>个人信息</h2>
+              <p><strong>昵称：</strong><span id="profile-displayname">小助手</span></p>
+              <p><strong>签名：</strong>分享实用技巧和写博客的真经验</p>
+              <button class="btn btn-primary">编辑资料</button>
+            </div>
+            <div class="profile-card card">
+              <h3>功能入口</h3>
+              <div class="sidebar-list">
+                <a href="../admin/article-edit.html">我的文章</a>
+                <a href="#">草稿箱</a>
+                <a href="#">评论管理</a>
+                <a href="#">安全设置</a>
+              </div>
+            </div>
+          </div>
+          <aside class="sidebar">
+          <div class="sidebar-card">
+            <h3>统计概览</h3>
+            <div class="profile-stats">
+              <div class="stats-item"><span>文章</span><strong>12</strong></div>
+              <div class="stats-item"><span>阅读</span><strong>8.3k</strong></div>
+              <div class="stats-item"><span>收藏</span><strong>234</strong></div>
+            </div>
+          </div>
+          <div class="sidebar-card">
+            <h3>最近活动</h3>
+            <ul>
+              <li>发布文章《这几个写作工具，帮你快速写出靠谱内容》</li>
+              <li>回复评论：写文章的小技巧</li>
+              <li>更新个人简介</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+  <div id="common-footer"></div>
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/common.js" data-common-path="../common/header-footer.html" data-active-page="profile" data-base-path="../"></script>
+</body>
+</html>

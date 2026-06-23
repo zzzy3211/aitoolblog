@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI博客 - 用户注册</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <div id="common-header"></div>
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="form-card card">
+          <h2>创建账号</h2>
+          <form id="register-form">
+            <div class="input-group">
+              <label for="register-name">用户名</label>
+              <input id="register-name" type="text" required data-label="请输入用户名" placeholder="请输入用户名" />
+            </div>
+            <div class="input-group">
+              <label for="register-email">邮箱</label>
+              <input id="register-email" type="email" required data-label="请输入邮箱" placeholder="请输入邮箱地址" />
+            </div>
+            <div class="input-group">
+              <label for="register-password">密码</label>
+              <div style="display:flex; gap:10px; align-items:center;">
+                <input id="register-password" type="password" required data-label="请输入密码" placeholder="请输入密码" style="flex:1;" />
+                <button type="button" id="toggle-register-password" class="btn" style="padding: 10px 14px;">显示</button>
+              </div>
+            </div>
+            <div class="input-group">
+              <label for="register-confirm-password">确认密码</label>
+              <div style="display:flex; gap:10px; align-items:center;">
+                <input id="register-confirm-password" type="password" required data-label="请输入确认密码" placeholder="请再次输入密码" style="flex:1;" />
+                <button type="button" id="toggle-register-confirm" class="btn" style="padding: 10px 14px;">显示</button>
+              </div>
+            </div>
+            <div class="input-group">
+              <label><input type="checkbox" required data-label="请同意服务条款" /> 我已阅读并同意服务条款</label>
+            </div>
+            <div class="button-row">
+              <button type="submit" class="btn btn-primary">注册</button>
+              <a href="login.html" class="btn">已有账号？登录</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div id="common-footer"></div>
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/common.js" data-common-path="../common/header-footer.html" data-active-page="register" data-base-path="../"></script>
+</body>
+</html>
